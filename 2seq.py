@@ -1,0 +1,6 @@
+numbers = input('Введите цифры через запятую: ')
+num = numbers.replace(',', ' ').replace('/', ' ').replace(';', ' ').split()
+list_numbers = list(num)
+print(list_numbers)
+new_list = set(list_numbers)
+print(new_list)

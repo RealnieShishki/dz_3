@@ -1,0 +1,10 @@
+first_numbers = input('Введите цифры через запятую: ')
+second_numbers = input('Введите цифры через запятую: ')
+first_num = first_numbers.replace(',', ' ').replace('/', ' ').replace(';', ' ').split()
+second_num = second_numbers.replace(',', ' ').replace('/', ' ').replace(';', ' ').split()
+first_list = set(first_num)
+second_list = set(second_num)
+print(first_list)
+print(second_list)
+new_list = first_list-second_list
+print(new_list)
